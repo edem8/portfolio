@@ -1,0 +1,155 @@
+.me {
+  display: grid;
+  
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+}
+
+
+.me2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+ 
+} 
+
+.me3{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+}
+
+.me4{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  column-gap: 2rem;
+  margin-top: 3rem;
+}
+
+@media screen and (min-width: 427px)
+{
+    .me .small{
+        display: none;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+  .me {
+    overflow: hidden;
+    margin-top: 0rem;
+    display: grid;
+    grid-template-columns: .5fr 1fr;
+  }
+
+  .me2{
+    font-size: .9rem;
+  }
+  
+  .me3{
+    font-size: .9rem;
+  }
+
+  .me4{
+    font-size: .9rem;
+  }
+}
+
+
+@media screen and (max-width: 426px) {
+    .me {
+      overflow: hidden;
+     
+      display: block;
+
+      
+    }
+
+    .me .large{
+        display: none;
+    }
+
+
+    .me2{
+    margin-top: 10rem;
+      font-size: .9rem;
+      display: block;
+    }
+
+
+    .me3{
+      margin-top: 3rem;
+        font-size: .9rem;
+        display: block;
+      }
+
+    
+      .me4{
+        margin-top: 0;
+          font-size: .9rem;
+          display: block;
+        }
+  }
+
+
+.me .light {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: start;
+  font-size: .94em;
+  opacity: 10;
+}
+
+.me .bold {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: start;
+  font-size: .94em;
+  
+}
+
+.me .light span {
+  color: #7fffd4;
+  font-size: 1rem;
+  font-weight: 550;
+ 
+}
+
+.me .bold span {
+  color: #7fffd4;
+  font-size: 1rem;
+  font-weight: 550;
+  
+}
+
+.profile {
+  background-image: url("../../images/edem.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 15rem;
+  height: 15rem;
+  border-radius: 100%;
+  margin-bottom: 3.5rem;
+  margin-left: 9rem;
+}
+
+@media screen and (max-width: 768px) {
+  .profile {
+    width: 12rem;
+    height: 12rem;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 426px) {
+    .profile{
+        width: 9rem;
+        height: 9rem;
+        margin-left: 0;
+    }
+  }
